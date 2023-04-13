@@ -10,6 +10,9 @@ const renderCount = () => {
   // }
 
   countElement.className = count > 5 ? "count-too-high" : "";
+
+  const warningMessage = document.getElementById("warning-count-too-high");
+  warningMessage.style.display = count > 5 ? "" : "none";
 };
 
 const incrementButton = document.getElementById("increment");

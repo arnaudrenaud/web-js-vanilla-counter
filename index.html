@@ -20,6 +20,13 @@
       .count-too-high {
         color: orange;
       }
+
+      .warning-message {
+        background: lightyellow;
+        border: 1px solid orange;
+        border-radius: 4px;
+        padding: 8px;
+      }
     </style>
   </head>
 
@@ -28,6 +35,13 @@
     <div>
       <button id="increment">+</button>
       <button id="decrement">-</button>
+    </div>
+    <div
+      class="warning-message"
+      id="warning-count-too-high"
+      style="display: none"
+    >
+      Le compte est trop élevé.
     </div>
 
     <script src="/counter.js"></script>
