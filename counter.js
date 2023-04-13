@@ -3,6 +3,13 @@ let count = 0;
 const renderCount = () => {
   const countElement = document.getElementById("count");
   countElement.innerText = count;
+  // if (count > 5) {
+  //   countElement.classList.add("count-too-high");
+  // } else {
+  //   countElement.classList.remove("count-too-high");
+  // }
+
+  countElement.className = count > 5 ? "count-too-high" : "";
 };
 
 const incrementButton = document.getElementById("increment");
